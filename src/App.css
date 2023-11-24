@@ -1,0 +1,39 @@
+.App {
+  text-align: center;
+}
+
+#titel{
+  margin-top: 0;
+  padding-top: 1em;
+  font-size: 3.5em;
+}
+#quote {
+  max-width: 30em !important; /* Ändere die Breite hier auf 30em */
+  margin: 0 auto; /* Zentriert das Zitat horizontal */
+  font-size: 4em;
+  display: block; /* Verwende inline-block, um Breite und Zentrierung zu berücksichtigen */
+}
+
+#citing {
+  max-width: 30em; /* Ändere die Breite hier auf 30em */
+  margin: 0 auto; /* Zentriert die Quellenangabe horizontal */
+  font-size: 2em;
+  font-weight: bold;
+}
+
+
+.stiling{
+
+  font-family: Atrament;
+  color: white;
+  text-align: center;
+}
+
+.position{
+  margin-top: 8em;
+  text-align: center;
+
+}
+#mark{
+  font-size: 10em;
+}

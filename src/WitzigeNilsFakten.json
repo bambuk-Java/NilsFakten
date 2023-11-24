@@ -1,0 +1,23 @@
+{
+    "fakten": [
+      {
+        "titel": "Fakt 1",
+        "inhalt": "Dies ist der erste Fakt.",
+        "datum": "12.4.1934",
+        "author": "Winkler Duck"
+      },
+      {
+        "titel": "Fakt 2",
+        "inhalt": "Dies ist der zweite Fakt.",
+        "datum": "3.8.1955",
+        "author": "Nilspferd"
+      },
+      {
+        "titel": "Fakt 3",
+        "inhalt": "Dies ist der dritte Fakt. Dies ist der dritte Fakt. Dies ist der dritte Fakt.",
+        "datum": "12.5.1984",
+        "author": "Entelein"
+      }
+    ]
+  }
+  
