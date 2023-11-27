@@ -9,18 +9,30 @@ function App() {
     const [facts, setFacts] = useState([]);
     useEffect(() => {
       if (factsData.fakten && factsData.fakten.length > 0) {
-        setFacts(factsData.fakten[1]);
+        setFacts(factsData.fakten[2]);
       }
     }, []);
+    
     /** <--------------- Styling ------------> */
 
   const rotation = {
     transform: hover ? 'rotate(135deg)' : '',
-    transition: 'transform 0.3s ease-in-out',
+    transition: 'transform 0.5s ease-in-out',
     position: 'absolute',
     top: '1.75em',
     left: '2.5em',
-
+    zIndex : '100',
+  }
+  const list = {
+    position: 'absolute',
+    top: '1.75em',
+    left: '1em',
+    listStyle: 'none'
+  };
+const listItem = {
+  opacity: hover ? '1' : '0',
+  transition: `transform 0.9s ${hover ? '0.5s' : '0s'}, opacity 0.3s ${hover ? '0.5s' : '0s'}`,
+  transform: `translateY(${hover ? '7' : '1.75'}em)`,
   }
   const title = {
     marginTop: '0',
@@ -33,10 +45,10 @@ const stiling = {
   textAlign: 'center'
 }
 const position = {
-  marginTop: '8em',
+  marginTop: '10em',
   textAlign: 'center',
-
 }
+
 
   const backgroundStyle = {
     backgroundImage: `url('giphyb.gif')`,
@@ -57,16 +69,21 @@ const position = {
   return (
     <div style={{...backgroundStyle,textAlign: 'center',position: 'relative'}}>
       <div style={overlayStyle}>
-        <img src='geoDreieck.png' style={{...rotation, height: '4.5em', width : '4.5em'}}
-              onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}/>
+        <img src='geoDreieck.png' style={{...rotation, height: '5em', width : '5em'}}
+            onMouseEnter={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}/>
+        <ul style={ list}>
+          <li style={listItem}>fdasfs</li>
+          <li style={listItem}>fdas</li>
+        </ul>
       <h1 style={{...title, ...stiling}}>Witziger Nilsfakt</h1>
         <div style={{position}}>
           {facts ? (
             <div>
   <p style={{...stiling, 
-        maxWidth: '30em !important',
+        width: '15em ',
         margin: '0 auto',
+        paddingTop:'1em',
         fontSize: '4em',
         display : 'block',}}>
     {facts.inhalt}
