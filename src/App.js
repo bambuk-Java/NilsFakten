@@ -1,8 +1,25 @@
-import './App.css';
+
 import factsData from './WitzigeNilsFakten.json';
 import { useState, useEffect } from 'react';
 
 function App() {
+
+  const title = {
+    marginTop: '0',
+    paddingTop: '1em',
+    fontSize: '3.5em'
+}
+const stiling = {
+  fontFamily: 'Atrament',
+  color: 'white',
+  textAlign: 'center'
+}
+const position = {
+  marginTop: '8em',
+  textAlign: 'center',
+
+}
+
   const backgroundStyle = {
     backgroundImage: `url('giphyb.gif')`,
     backgroundSize: 'cover',
@@ -25,17 +42,29 @@ function App() {
   }, []);
 
   return (
-    <div className="App" style={backgroundStyle}>
+    <div style={{...backgroundStyle,textAlign: 'center'}}>
       <div style={overlayStyle}>
-        <h1 id='titel' className='stiling'>Witziger Nilsfakt</h1>
-        <div class='position'>
+      <h1 style={{...title, ...stiling}}>Witziger Nilsfakt</h1>
+        <div style={{position}}>
           {facts ? (
             <div>
-            <p class='stiling' id='quote'>
-              {facts.inhalt}</p>
-            <p class='stiling' id='citing'>
-              {facts.author} {facts.datum}</p>
-            </div>
+  <p style={{...stiling, 
+        maxWidth: '30em !important',
+        margin: '0 auto',
+        fontSize: '4em',
+        display : 'block',}}>
+    {facts.inhalt}
+  </p>
+  <p style={{...stiling,
+      maxWidth : '30em', 
+      margin: '0 auto', 
+      fontSize: '2em',
+      fontWeight: 'bold'
+    }}>
+    {facts.author} {facts.datum}
+  </p>
+</div>
+
           ) : ("fdfs")
           }
         </div>
