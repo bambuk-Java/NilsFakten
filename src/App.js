@@ -3,7 +3,25 @@ import factsData from './WitzigeNilsFakten.json';
 import { useState, useEffect } from 'react';
 
 function App() {
+    /** <---------- Functions ----------> */
+    const [hover, setHover] = useState(false);
 
+    const [facts, setFacts] = useState([]);
+    useEffect(() => {
+      if (factsData.fakten && factsData.fakten.length > 0) {
+        setFacts(factsData.fakten[1]);
+      }
+    }, []);
+    /** <--------------- Styling ------------> */
+
+  const rotation = {
+    transform: hover ? 'rotate(135deg)' : '',
+    transition: 'transform 0.3s ease-in-out',
+    position: 'absolute',
+    top: '1.75em',
+    left: '2.5em',
+
+  }
   const title = {
     marginTop: '0',
     paddingTop: '1em',
@@ -34,16 +52,14 @@ const position = {
     height: '100%',
     backgroundColor: 'rgba(0, 0, 0, 0.5)', 
   };
-  const [facts, setFacts] = useState([]);
-  useEffect(() => {
-    if (factsData.fakten && factsData.fakten.length > 0) {
-      setFacts(factsData.fakten[1]);
-    }
-  }, []);
+
 
   return (
-    <div style={{...backgroundStyle,textAlign: 'center'}}>
+    <div style={{...backgroundStyle,textAlign: 'center',position: 'relative'}}>
       <div style={overlayStyle}>
+        <img src='geoDreieck.png' style={{...rotation, height: '4.5em', width : '4.5em'}}
+              onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}/>
       <h1 style={{...title, ...stiling}}>Witziger Nilsfakt</h1>
         <div style={{position}}>
           {facts ? (
