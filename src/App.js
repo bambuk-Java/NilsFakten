@@ -17,7 +17,8 @@ function App() {
 
   const rotation = {
     transform: hover ? 'rotate(135deg)' : '',
-    transition: 'transform 0.5s ease-in-out',
+    transition: `transform 0.9s ${hover ? '0.2s' : '0.9s'}`,
+    //transition: 'transform 0.5s ease-in-out',
     position: 'absolute',
     top: '1.75em',
     left: '2.5em',
@@ -31,8 +32,8 @@ function App() {
   };
 const listItem = {
   opacity: hover ? '1' : '0',
-  transition: `transform 0.9s ${hover ? '0.5s' : '0s'}, opacity 0.3s ${hover ? '0.5s' : '0s'}`,
-  transform: `translateY(${hover ? '7' : '1.75'}em)`,
+  fontSize: '1.5em'
+
   }
   const title = {
     marginTop: '0',
@@ -73,8 +74,12 @@ const position = {
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}/>
         <ul style={ list}>
-          <li style={listItem}>fdasfs</li>
-          <li style={listItem}>fdas</li>
+          <li style={{...stiling,...listItem,  
+          transition: `transform 0.9s ${hover ? '1.1s' : '0s'}, opacity 1s ${hover ? '1.1s' : '0s'}`,
+          transform: `translateY(${hover ? '7' : '1.75'}em)`,}}>fdasfs</li>
+          <li style={{...stiling,...listItem,  
+          transition: `transform 0.9s ${hover ? '1s' : '0.1s'}, opacity 1s ${hover ? '1s' : '0.1s'}`,
+          transform: `translateY(${hover ? '7' : '1.75'}em)`,}}>fdas</li>
         </ul>
       <h1 style={{...title, ...stiling}}>Witziger Nilsfakt</h1>
         <div style={{position}}>
