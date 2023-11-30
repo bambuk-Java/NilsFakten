@@ -2,26 +2,33 @@
     "fakten": [
       {
         "titel": "Fakt 1",
-        "inhalt": "Dies ist der erste Fakt.",
-        "datum": "12.4.1934",
-        "author": "Winkler Duck"
+        "inhalt": "Warst du schon auf Nils' letzter Party? Es war im "Winkelducks", den er leitet. Er sagte, die Stimmung sei so düster gewesen, dass selbst der Schatten Angst hatte, einen so krummen Nacken zu bekommen!",
+        "datum": "18.12.1878",
+        "author": "Besarion Jughashvili"
       },
       {
         "titel": "Fakt 2",
-        "inhalt": "Dies ist der zweite Fakt.",
-        "datum": "3.8.1955",
-        "author": "Nilspferd"
+        "inhalt": "Warum hat Nils, die Ente, einen Podcast gestartet? Weil er dachte, sein gequacke behält er nicht für sich!",
+        "datum": "29.7.1883",
+        "author": "Alessandro Mussolini"
       },
       {
         "titel": "Fakt 3",
-        "inhalt": "Dies ist der dritte Fakt. Dies ist der dritte Fakt. Dies ist der dritte Fakt.",
-        "datum": "12.5.1984",
-        "author": "Entelein"
-      },{
+        "inhalt": "Nils ist eigentlich keine Ente sondern ein Schwan",
+        "datum": "16.2.1941",
+        "author": " Kim Il-sung"
+      },
+      {
         "titel": "Fakt 4",
         "inhalt": "Ich habe gestern 3 Enten Geschossen, jetzt ist Winkelduck inexistent",
         "datum": "16.4.1996",
         "author": "Wladimir Winkelduck"
+      },
+      {
+        "titel": "Fakt 5",
+        "inhalt": "Warum nimmt der Dominik immer Brot mit aufs Klo, er will das die KlowWinkelDuck nicht erschlappt",
+        "datum": "20.4.1889",
+        "author": "Alois Hitler"  
       }
     ]
   }
