@@ -17,6 +17,11 @@
         "inhalt": "Dies ist der dritte Fakt. Dies ist der dritte Fakt. Dies ist der dritte Fakt.",
         "datum": "12.5.1984",
         "author": "Entelein"
+      },{
+        "titel": "Fakt 4",
+        "inhalt": "Ich habe gestern 3 Enten Geschossen, jetzt ist Winkelduck inexistent",
+        "datum": "16.4.1996",
+        "author": "Wladimir Winkelduck"
       }
     ]
   }
